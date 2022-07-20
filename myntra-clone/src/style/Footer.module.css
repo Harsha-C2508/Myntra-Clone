@@ -1,0 +1,78 @@
+.containTop{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.heading{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+}
+.p{
+    display: block;
+    color: grey;
+    line-height: 70%;
+    font-weight: 400;
+    font-size: 13px;
+    font-style: normal;
+    margin-top: 20px;
+}
+.playStore{
+   display: flex;
+}
+.playStoreimg{
+    height: 45px;
+}
+.social{
+    height: 20px;
+    margin-right: 20px;
+}
+.label{
+    color: gray;
+    width: 205px;
+}
+.icon{
+    height: 50px;
+    margin-right: 10px;
+}
+.icons{
+    height: 50px;
+    margin-right: 18px;
+}
+.playStores{
+    display: flex;
+    margin-top: 20px;
+ }
+ .containMid{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+ }
+ .line{
+    border: 0.1px solid rgb(249, 241, 241);
+    width: 85%;
+    height: 0px; 
+    margin-top: 25px;
+    margin-left: 5px;
+ }
+ .searches{
+    font-size: 14.9px;
+    font-weight: lighter;
+    line-height: 25px;
+ }
+ .serachmore{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+ }
+ .lines{
+    border: 0.1px solid rgb(249, 241, 241);
+    width: 100%;
+    height: 0px; 
+    margin-top: 35px;
+    margin-left: 5px;
+ }
