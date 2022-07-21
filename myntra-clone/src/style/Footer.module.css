@@ -15,7 +15,7 @@
 .p{
     display: block;
     color: grey;
-    line-height: 70%;
+    line-height: 170%;
     font-weight: 400;
     font-size: 13px;
     font-style: normal;
@@ -75,4 +75,18 @@
     height: 0px; 
     margin-top: 35px;
     margin-left: 5px;
+ }
+ .contact{
+    display: block;
+    color: grey;
+    line-height: 70%;
+    font-weight: 400;
+    font-size: 13px;
+    font-style: normal;
+    margin-top: 138px;
+    text-align: end;
+ }
+ .eacy{
+    color: gray;
+    font-size: 12.5px;
  }

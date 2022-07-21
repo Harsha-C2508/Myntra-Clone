@@ -2,9 +2,9 @@ import React from 'react'
 import {Routes, Route,} from "react-router-dom";
 import Bag from './Bag';
 import Home from './Home';
-import Footer from '../component/Footer';
 import Login from './Login';
 import Mens from './Mens';
+import Shirt from './Shirt';
 import Wishlist from './Wishlist';
 import Women from './Women';
 const AllRoutes = () => {
@@ -17,6 +17,7 @@ const AllRoutes = () => {
         <Route path='/login' element={<Login/>}/>
         <Route path='/wish' element={<Wishlist/>}/>
         <Route path='/bag' element={<Bag/>}/>
+        <Route path='/mens/:id' element={<Shirt/>}/>
      </Routes>
     </div>
   )

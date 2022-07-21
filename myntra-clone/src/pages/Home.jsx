@@ -26,45 +26,70 @@ const Home = () => {
       })
   },[])
   useEffect(()=>{
+    setLoading(true)
+    setError(false)
     offerOntheWay()
     .then((res)=>{
         setOffers(res.data)
+        setLoading(false)
     })
     .catch((err)=>{
+      setLoading(false)
+      setError(true)
     })
 },[])
 useEffect(()=>{
+  setLoading(true)
+    setError(false)
   budgetBuy()
   .then((res)=>{
      setBudget(res.data)
+     setLoading(false)
   })
   .catch((err)=>{
+    setLoading(false)
+    setError(true)
   })
 },[])
 
 useEffect(()=>{
+  setLoading(true)
+    setError(false)
   crushOn()
   .then((res)=>{
      setCrushing(res.data)
+     setLoading(false)
   })
   .catch((err)=>{
+    setLoading(false)
+    setError(true)
   })
 },[])
 
 useEffect(()=>{
+  setLoading(true)
+    setError(false)
   majorBrand()
   .then((res)=>{
      setMajor(res.data)
+     setLoading(false)
   })
   .catch((err)=>{
+    setLoading(false)
+    setError(true)
   })
 },[])
 useEffect(()=>{
+  setLoading(true)
+    setError(false)
   catagory()
   .then((res)=>{
      setCate(res.data)
+     setLoading(false)
   })
   .catch((err)=>{
+    setLoading(false)
+    setError(true)
   })
 },[])
   return (
