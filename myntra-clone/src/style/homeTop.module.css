@@ -3,12 +3,12 @@
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
     height: 200px;
-    gap: 0.1px;
+    gap: 0px;
 }
 .img{
-    width: 290px;
+    width: 295px;
     height: 100px;
-    margin-top: -10px;
+    /* margin-top: -1px; */
 }
 .heading{
     width: 99.5%;

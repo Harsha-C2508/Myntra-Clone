@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { budgetBuy, catagory, crushOn, majorBrand, offerOntheWay, topOffer } from '../api/api';
 import Styles from '../style/homeTop.module.css'
 const Home = () => {
@@ -118,7 +119,7 @@ useEffect(()=>{
       </div>
       <div className={Styles.offerContain}>
         {budget.map((budget)=>(
-            <img src={budget.img} alt="budget" className={Styles.budgetimg}/>
+            <Link to='/mens'><img src={budget.img} alt="budget" className={Styles.budgetimg}/></Link>
         ))}
       </div>
 
