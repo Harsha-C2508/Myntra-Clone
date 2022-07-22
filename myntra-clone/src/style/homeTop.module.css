@@ -1,0 +1,50 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    height: 200px;
+    gap: 0.1px;
+}
+.img{
+    width: 290px;
+    height: 100px;
+    margin-top: -10px;
+}
+.heading{
+    width: 99.5%;
+    margin-top: 90px;
+}
+.offerContain{
+    display: flex;
+}
+.Offerimg{
+    height: 187px;
+    object-fit: cover;
+}
+.heading2{
+    width: 99.5%;
+}
+.budgetimg{
+    height: 170px;
+    object-fit: cover;
+}
+.crushContainer{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.crushimg{
+    height: 280px;
+    width: 100%;
+}
+.major{
+  display: flex;
+  height: 199px;
+}
+.category{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.cateimg{
+  height: 270px;
+  width: 100%;
+}
