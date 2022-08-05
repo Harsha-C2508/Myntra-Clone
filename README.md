@@ -22,5 +22,4 @@ The above stack percentage is calculated by GitHub it may be different when we u
 Some Glimpse and Screenshots of our Website:
 Home Page,Mens Page , Product Page ,Product Details Page , Login Page , Cart Page, Payment Page 
 
-Video Link : https://youtu.be/Af3UwDm7omE
 Blog: https://medium.com/@harshac2508/myntra-clone-af720cbb03e0
