@@ -65,6 +65,10 @@ Home Page
 <img src="https://miro.medium.com/max/1400/1*0p2CfXzfPcBRnmdov36JcA.png" alt="payment"/>
 </br>
 
+<h3>HOW DID CREATE:</h3>
+<p>I have created this website using React JS. I have included Pagination, and Routing on my website. Building this website I have taken around 4 days. There were lots of challenging situations but I have overcome those by Long google search and referring documentation .
+</p>
+                                                                                      
 <h3>
 From here you can read my 
 <a href="https://medium.com/@harshac2508/myntra-clone-af720cbb03e0">blog</a>
