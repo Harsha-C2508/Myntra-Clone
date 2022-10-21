@@ -1,0 +1,93 @@
+*{
+  font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif;
+}
+.toppart{
+    text-align: left;
+    width: 95%;
+    margin: auto;
+}
+.toppart>p{
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400px;
+  margin-bottom: 20px;
+}
+.dis{
+    margin-top: 10px;
+    color: gray;
+}
+.contain{
+    display: flex;
+    gap: 5px;
+    width: 95%;
+    margin: auto;
+}
+.left{
+    width: 18%;
+    height: auto;
+}
+.right{
+    width: 80%;
+    height: auto;
+}
+.leftheading{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.leftTop1{
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    font-style: normal;
+    margin-left: 5px;
+}
+.leftTop2{
+    font-size: 13px;
+    font-weight: 500;
+    color: #ff3f6c;
+    font-style: normal;
+    margin-right: 5px;
+}
+.cate{
+    border: .2px solid rgba(198, 195, 195, 0.814);
+    height: auto;
+    margin-top: 10px;
+    border-left: none;
+}
+.filhead{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.iconbor{
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 4px;
+    background: rgba(234, 231, 231, 0.953);
+}
+.icon{
+    font-size: 13px;
+    font-weight: 400;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.prodimg{
+  height: 300px;
+  width: 300px;
+}
+.dis{
+    color: grey;
+    font-size: 14px;
+}
+.strick{
+    color: grey;
+    font-size: 14px;
+    text-decoration: line-through;
+}

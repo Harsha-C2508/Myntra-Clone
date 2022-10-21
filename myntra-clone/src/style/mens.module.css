@@ -1,0 +1,91 @@
+.slider{
+    overflow: hidden;
+}
+.slider figure{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+    animation: 20s slider infinite;
+}
+.slider figure img{
+    float: left;
+    width: 100%;
+}
+@keyframes slider{
+  0%{
+    left: 0;
+  }
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+ }
+ 45%{
+    left: -100%;
+ }
+ 50%{
+    left: -200%;
+ }
+ 70%{
+    left: -200%;
+ }
+ 75%{
+    left: -300%;
+ }
+ 95%{
+    left: -300%;
+ }
+ 100%{
+    left: -400%;
+ }
+}
+
+/*================Product=====================*/
+.contain{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+.heading{
+    font-size: 29px;
+    font-weight: 500;
+    word-spacing: 2px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.dealsContain{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    width: 99%;
+    margin: auto;
+    column-gap: 20px;
+}
+.img{
+    height: 350px;
+    width: 100%;
+}
+.bag{
+    display: flex;
+    gap: 20px;
+}
+.bagimg{
+    height: 190px;
+}
+.brandbag{
+    display: flex;
+    gap: 20px;
+}
+.brandimg{
+    height: 300px; 
+}
+
+.luxeimg{
+    height: 210px;
+}
+.trendimg{
+    height: 255px;
+}
