@@ -8,19 +8,23 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  Button
 } from '@chakra-ui/react'
-import { productDetals } from '../api/singleProdAPI'
+import { Spinner } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 
 const Shirt = () => {
   const [details,setDetails] = useState([])
   const [loading,setLoading] = useState(false)
   const [error,setError] = useState(false)
+  const [page,setPage]  = useState(1)
 
   useEffect(()=>{
     setLoading(true)
     setError(false)
-    productDetals()
+    axios.get(`https://bookapi-b62i.onrender.com/singleDeatils?_page=${page}&_limit=25`)
     .then((res)=>{
       setDetails(res.data)
       setLoading(false)
@@ -29,11 +33,12 @@ const Shirt = () => {
       setLoading(false)
       setError(true)
     })
-  },[]);
+  },[page]);
+
   return (
-    <div>
+    <div >
       <div>
-        {loading}
+      {loading && <div> <Spinner /></div>}
         {error}
       </div>
          <div className={Styles.toppart}>
@@ -221,7 +226,7 @@ const Shirt = () => {
 
                         <p style={{ display:"flex",width:"90%",margin:"auto",marginBottom:"7px"}}>
                           <input type="checkbox" />
-                          <p style={{backgroundColor:"oliva",height:"10px",width:"10px",borderRadius:"50%",padding:"6px",marginTop:"4px",marginLeft:"5px"}}></p>
+                          <p style={{backgroundColor:"#3d9970",height:"10px",width:"10px",borderRadius:"50%",padding:"6px",marginTop:"4px",marginLeft:"5px"}}></p>
                           <p style={{ marginLeft:"5px",fontSize:"14px"}}>Oliva <span style={{ color:"grey" }}>(54)</span></p>
                         </p>
 
@@ -479,7 +484,7 @@ const Shirt = () => {
                       <div className={Styles.grid}>
                         {details.map((p)=>(
                           <div>
-                            <img className={Styles.prodimg} src={p.img} alt="" />
+                            <Link to={`/shirt/${p.id}`} details={details}><img className={Styles.prodimg} src={p.img} alt={p.name} /></Link>
                             <b>{p.name}</b>
                             <p className={Styles.dis} >{p.dis}</p>
                             <div style={{display:"flex"}}>
@@ -493,7 +498,30 @@ const Shirt = () => {
                     
                  </div>
                  {/* right part img end*/}
+                    <div style={{border:".1px solid rgba(198, 195, 195, 0.814)",width:"95%",margin:"auto"}}></div>
+                    <div style={{display:"flex",height:"50px",width:"90%",justifyContent:"space-between",margin:"auto"}}>
 
+                      <div>
+                          page {page}  of 21
+                      </div>
+                      
+                        <div style={{display:"flex",height:"50px",justifyContent:"center"}}>
+                          <button className={Styles.button} onClick={()=>{setPage(page-3)}}>1</button>
+                          <button className={Styles.button} onClick={()=>{setPage(page+1)}}>2</button>
+                          <button className={Styles.button} onClick={()=>{setPage(page+1)}}>3</button>
+                          <button className={Styles.button} onClick={()=>{setPage(page+1)}}>4</button>
+                          <button className={Styles.button}>5</button>
+                          <button className={Styles.button}>6</button>
+                          <button className={Styles.button}>7</button>
+                          <button className={Styles.button}>8</button>
+                          <button className={Styles.button}>9</button>
+                          <button className={Styles.button}>10</button>
+                        </div>
+
+                        <div>
+                          <Button border='1px solid black' bg="white" marginTop='10px'>Next {`>`}</Button>
+                        </div>
+                    </div>
               </div>
               {/* right part end */}
          </div>

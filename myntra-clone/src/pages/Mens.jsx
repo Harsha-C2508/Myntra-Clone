@@ -1,8 +1,8 @@
 import React, { useEffect,useState } from 'react'
-import { accessories, brands, cateToBag, footwear, luxeBrand, menDeals, sport, trendings } from '../api/mensApi';
+import { accessories, brands, cateToBag, footwear, luxeBrand, menDeals, sport, trendings, unbelivedeal } from '../api/mensApi';
 import Styles from '../style/mens.module.css'
 import { Link } from 'react-router-dom';
-
+import { Spinner } from '@chakra-ui/react'
 const Mens = () => {
   const [deals,setDeals] = useState([]);
   const[loading,setLoading] = useState(false);
@@ -14,6 +14,7 @@ const Mens = () => {
   const [sportwear,setSportwear] = useState([]);
   const [foot,setFoot] = useState([]);
   const [acce,setAcce] = useState([])
+  const [unbelivedeals,setUnbelivedeals] = useState([]);
   useEffect(()=>{
     setLoading(true)
     setError(false)
@@ -29,85 +30,61 @@ const Mens = () => {
   },[])
 
   useEffect(()=>{
-    setLoading(true)
-    setError(false)
     cateToBag()
     .then((res)=>{
       setBag(res.data)
-      setLoading(false)
     })
     .catch((err)=>{
-     setLoading(false)
      setError(true)
     })
   },[])
 
   useEffect(()=>{
-    setLoading(true)
-    setError(false)
      brands()
     .then((res)=>{
       setBrand(res.data)
-      setLoading(false)
     })
     .catch((err)=>{
-     setLoading(false)
      setError(true)
     })
   },[])
 
   useEffect(()=>{
-    setLoading(true)
-    setError(false)
      luxeBrand()
     .then((res)=>{
      setLuke(res.data)
-      setLoading(false)
     })
     .catch((err)=>{
-     setLoading(false)
      setError(true)
     })
   },[])
 
   useEffect(()=>{
-    setLoading(true)
-    setError(false)
     trendings()
     .then((res)=>{
      setTrending(res.data)
-      setLoading(false)
     })
     .catch((err)=>{
-     setLoading(false)
      setError(true)
     })
   },[])
 
   useEffect(()=>{
-    setLoading(true)
-    setError(false)
     sport()
     .then((res)=>{
     setSportwear(res.data)
-      setLoading(false)
     })
     .catch((err)=>{
-     setLoading(false)
      setError(true)
     })
   },[])
 
   useEffect(()=>{
-    setLoading(true)
-    setError(false)
     footwear()
     .then((res)=>{
       setFoot(res.data)
-      setLoading(false)
     })
     .catch((err)=>{
-     setLoading(false)
      setError(true)
     })
   },[])
@@ -125,10 +102,19 @@ const Mens = () => {
      setError(true)
     })
   },[])
+
+  useEffect(()=>{
+    unbelivedeal()
+    .then((res)=>{
+      setUnbelivedeals(res.data)
+    })
+    .catch((err)=>{
+     setError(true)
+    })
+  },[])
+
   return (
    <div style={{ textAlign:"left" }}>
-    {loading}
-    {error}
       <div className={Styles.slider}>
         <figure>
             <img src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/17/a53b7f7e-37ab-4319-a1b4-5d9c0cca68601650180659343-Lancer_Desk.jpg" alt="" />
@@ -141,6 +127,18 @@ const Mens = () => {
         </figure>
       </div>
 
+      <div>
+        <img className={Styles.heading2} src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/13/1b103462-6bff-46e7-89e7-ca0f2c6006d21657715178154-Shop-By-Category.jpg" alt="" />
+      </div>
+      <div>
+            {loading && <div> <Spinner /></div>}
+            {error}
+      </div>
+       <div className={Styles.unbelive}>
+         {unbelivedeals.map((p)=>(
+          <Link to={`/mens/${p.id}`}><img className={Styles.unbeliveimg} src={p.img} alt="" /></Link>
+         ))}
+       </div>
       <div style={{marginTop:"40px"}}>
          <b className={Styles.heading}>BIGGEST DEALS ON TOP BRANDS</b>
       </div>

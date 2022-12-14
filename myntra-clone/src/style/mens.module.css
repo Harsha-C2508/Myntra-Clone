@@ -44,6 +44,18 @@
 }
 
 /*================Product=====================*/
+.heading2{
+    width: 99.5%;
+    margin: auto;
+}
+.unbelive{
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+.unbeliveimg{
+    height: 240px;
+}
 .contain{
     width: 90%;
     margin: auto;

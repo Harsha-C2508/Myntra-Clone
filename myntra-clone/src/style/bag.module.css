@@ -1,0 +1,118 @@
+.top{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.contain{
+    height: auto;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+}
+.contain1{
+    border: .1px solid rgb(241, 233, 233);
+    height: auto;
+    width: 50%;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+}
+.contain2{
+    border: .1px solid rgb(238, 230, 230);
+    height: auto;
+    width: 50%;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    text-align: left;
+}
+.contain3{
+    border: .1px solid rgb(238, 230, 230);
+    height: auto;
+    border-left: none;
+    border-bottom: none;
+}
+.box1{
+    display: flex;
+    justify-content: space-between;
+    border: 1PX solid;
+    margin-top: 10px;
+    height: 50px;
+}
+.box12{
+    border: 1PX solid;
+    margin-top: 10px;
+    height: 100px;
+    text-align: left;
+}
+.box1>div>img{
+    height: 30px;
+    margin-left: 20px;
+}
+.btn{
+    margin-right: 20px;
+    height: 30px;
+    color: #ff3f6c;
+    margin-top: 10px;
+    padding:5px;
+    padding-bottom: 5px;
+}
+.btn:hover{
+    background: #edd1d7;
+}
+.img{
+    height: 140px;
+}
+.price{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+.offer{
+    color: #ff3f6c;
+    font-size: 13px;
+    font-weight: bold;
+}
+.strick{
+    color: gray;
+    text-decoration: line-through;
+}
+.contain2sec{
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+}
+.money{
+    border: 1px solid rgb(220, 213, 213);
+    border-radius: 15px;
+    width: 70px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+.contain4{
+    width: 100%;
+    border: .1px solid rgb(238, 230, 230);
+    margin-top: 20px;
+}
+.lastHead{
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.pricedis{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+}
+.text{
+    text-decoration: line-through;
+}
+.orderbtn{
+  background-color: #ff3f6c;
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+}

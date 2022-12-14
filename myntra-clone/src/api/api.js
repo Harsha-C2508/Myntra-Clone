@@ -1,23 +1,23 @@
 import axios from 'axios'
  export function topOffer(){
-    return axios.get("https://api-myntra.herokuapp.com/homeTop")
+    return axios.get("https://bookapi-b62i.onrender.com/homeTop")
  }
   export function offerOntheWay(){
-    return axios.get("https://api-myntra.herokuapp.com/homeoffers")
+    return axios.get("https://bookapi-b62i.onrender.com/homeoffers")
   }
 
   export function budgetBuy(){
-    return axios.get("https://api-myntra.herokuapp.com/budgetbuy")
+    return axios.get("https://bookapi-b62i.onrender.com/budgetbuy")
   }
 
   export function crushOn(){
-    return axios.get("https://api-myntra.herokuapp.com/crushingOn")
+    return axios.get("https://bookapi-b62i.onrender.com/crushingOn")
   }
 
   export function majorBrand(){
-    return axios.get("https://api-myntra.herokuapp.com/majorBrand")
+    return axios.get("https://bookapi-b62i.onrender.com/majorBrand")
   }
 
   export function catagory(){
-    return axios.get("https://api-myntra.herokuapp.com/shopByCat")
+    return axios.get("https://bookapi-b62i.onrender.com/shopByCat")
   }

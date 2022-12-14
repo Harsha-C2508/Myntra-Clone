@@ -1,0 +1,78 @@
+.line{
+    width: 100%;
+    border: .1px solid rgb(212, 211, 211);
+}
+.dis{
+    display: flex;
+    height: auto;
+
+}
+.address{
+    width: 30%;
+    border: .1px solid gray;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.part2{
+    width: 50%;
+}
+.info{
+    width: 90%;
+    margin: auto;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.infohead{
+    margin-bottom: 5px;
+}
+.infopart2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.place{
+  border: 1px solid gray;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  font-size: 15px;
+}
+.place1{
+    border: 1px solid #ff3f6c;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #ff3f6c;
+  }
+  .button{
+    width: 100%;
+    background-color: #ff3f6c;
+    height: 40px;
+    color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .contain4{
+    width: 100%;
+    border: .1px solid rgb(238, 230, 230);
+    margin-top: 20px;
+}
+.lastHead{
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.pricedis{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+}

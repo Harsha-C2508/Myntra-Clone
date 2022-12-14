@@ -21,6 +21,7 @@
     gap: 5px;
     width: 95%;
     margin: auto;
+    margin-bottom: 150px;
 }
 .left{
     width: 18%;
@@ -74,12 +75,12 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
-    gap: 20px;
+    gap: 10px;
     text-align: left;
     margin-bottom: 50px;
 }
 .prodimg{
-  height: 300px;
+  height: 250px;
   width: 300px;
 }
 .dis{
@@ -90,4 +91,17 @@
     color: grey;
     font-size: 14px;
     text-decoration: line-through;
+}
+.button{
+    margin-top: 15px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    text-align: center;
+    font-size: 13px;
+    margin-right: 10px;
+}
+.button:hover{
+    background: gray;
+    color: white;
 }

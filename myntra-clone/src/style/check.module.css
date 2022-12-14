@@ -1,0 +1,41 @@
+.line{
+    width: 100%;
+    border: .1px solid rgb(212, 211, 211);
+    margin-top: 50px;
+}
+.contain4{
+    width: 100%;
+    border: .1px solid rgb(238, 230, 230);
+    margin-top: 20px;
+}
+.lastHead{
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.pricedis{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+}
+.left{
+    width: 45%;
+    margin: auto;
+    text-align: left;
+    border: 1px solid;
+
+}
+.paydiv{
+  border:1px solid;
+  height: 60px;
+  background-color: whitesmoke;
+  text-align: center;
+}
+.code{
+    border: 2px solid;
+    border-radius: 5px;
+    height: 90px;
+    margin-top: 20px;
+}

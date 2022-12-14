@@ -6,7 +6,7 @@
     gap: 0px;
 }
 .img{
-    width: 295px;
+    width: 320px;
     height: 100px;
     /* margin-top: -1px; */
 }
@@ -18,14 +18,14 @@
     display: flex;
 }
 .Offerimg{
-    height: 187px;
+    height: 205px;
     object-fit: cover;
 }
 .heading2{
     width: 99.5%;
 }
 .budgetimg{
-    height: 170px;
+    height: 200px;
     object-fit: cover;
 }
 .crushContainer{

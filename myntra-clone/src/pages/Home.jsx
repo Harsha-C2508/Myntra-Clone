@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Spinner } from '@chakra-ui/react'
 import { budgetBuy, catagory, crushOn, majorBrand, offerOntheWay, topOffer } from '../api/api';
 import Styles from '../style/homeTop.module.css'
 const Home = () => {
@@ -54,48 +55,42 @@ useEffect(()=>{
 },[])
 
 useEffect(()=>{
-  setLoading(true)
-    setError(false)
   crushOn()
   .then((res)=>{
      setCrushing(res.data)
-     setLoading(false)
   })
   .catch((err)=>{
-    setLoading(false)
     setError(true)
   })
 },[])
 
 useEffect(()=>{
-  setLoading(true)
-    setError(false)
+
   majorBrand()
   .then((res)=>{
      setMajor(res.data)
-     setLoading(false)
+
   })
   .catch((err)=>{
-    setLoading(false)
+
     setError(true)
   })
 },[])
 useEffect(()=>{
-  setLoading(true)
-    setError(false)
+
   catagory()
   .then((res)=>{
      setCate(res.data)
-     setLoading(false)
+
   })
   .catch((err)=>{
-    setLoading(false)
+ 
     setError(true)
   })
 },[])
   return (
     <div style={{marginBottom:"10px" }}>
-      {loading}
+      {loading && <div> <Spinner /></div>}
       {error}
       <div className={Styles.container}>
         {data.map((p)=>(
@@ -137,7 +132,7 @@ useEffect(()=>{
       </div>
       <div className={Styles.major}>
         {major.map((majorBrand)=>(
-          <img src={majorBrand.img} alt="" />
+          <img src={majorBrand.img} alt="" className={Styles.budgetimg}/>
         ))}
       </div>
 

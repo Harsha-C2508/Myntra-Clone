@@ -62,3 +62,15 @@
     font-size: 12px;
     font-weight: bold;
 }
+.cartLength{
+    display: flex;
+}
+.cart{
+    background: #ff6f3c;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-top: -10px;
+    color: white;
+}

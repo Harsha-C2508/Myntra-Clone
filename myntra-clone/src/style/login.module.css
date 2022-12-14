@@ -1,0 +1,17 @@
+.contain{
+    width: 50%;
+    margin: auto;
+}
+.input{
+    border: 2px solid;
+    border-radius: 5px;
+    width: 60%;
+    margin-top: 10px;
+    height: 40px;
+}
+.btn{
+    background-color: #ff3f6c;
+    width: 50%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
